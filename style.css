@@ -1,19 +1,84 @@
-: :root {
-    --background:	#292d3e;
-    --foreground:	#959dcb;
-    --comment:	#676e95;
-    --accent:	#c3e88d;
+:root { 
+    --background: #292d3e;
+    --foreground: #959dcb;
+    --comment: #676e95;
+    --accent: #c3e88d;
     --redish: #ff5370;
-    --orangish:	#f78c6c;
-    --yellowish:	#ffcb6b;
-    --greenish:	#c3e88d;
-    --bluish:	#82aaff;
-    --purplish:	#c792ea;
+    --orangish: #f78c6c;
+    --yellowish: #ffcb6b;
+    --greenish: #c3e88d;
+    --bluish: #82aaff;
+    --purplish: #c792ea;
+  }
+  
+  body {
+    background-color:  var(--orangish);
+    color: var(--bluish);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .title {
+    margin: 1.5 em;
+    font-size: 46px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+  }
+
+.newGroceryForm {
+    display: flex;
+}
+#newGrocery {
+background-color: whitesmoke;
+color: darkslategray;
+padding: 1em;
+width: 25em;
+font-size: large;
+text-align: center;
+border-radius: 4px 0 0 0 4px;
+}
+
+#addBtn {
+    background-color:antiquewhite;
+    color: var(--comment);
+    padding:  1em;
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 4px 0 4px 0;
+}
+
+#addBtn:hover {
+    background-color: var(--redish) ;
+}
+
+#groceryList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: var(--yellowish);
 
 }
 
-body {
-    font-family: 'Edu NSW ACT Foundation', cursive;
-font-family: 'Edu QLD Beginner', cursive;
+#groceryItem {
+    background-color: beige;
+    color: var(--yellowish);
+    margin: 0.5em;
+    padding: 0.25em;
+    width: 25em;
+    font-size: large;
+    text-align: center;
+    border-radius: .5em;
+
 }
 
+#groceryItem:hover {
+    background-color: yellowgreen;
+    font-weight: bold;
+}
