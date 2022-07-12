@@ -66,7 +66,7 @@ border-radius: 4px 0 0 0 4px;
 
 }
 
-#groceryItem {
+.groceryItem {
     background-color: beige;
     color: var(--yellowish);
     margin: 0.5em;
@@ -78,7 +78,7 @@ border-radius: 4px 0 0 0 4px;
 
 }
 
-#groceryItem:hover {
+.groceryItem:hover {
     background-color: yellowgreen;
     font-weight: bold;
 }
